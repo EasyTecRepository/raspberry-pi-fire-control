@@ -2,7 +2,7 @@
 This project is about a RaspberryPi 3 that is used as a fire alarm control panel.
 
 ## First
-There is also an explanatory video for this project and a demonstration on YouTube. [Check it out](https://youtube.com/EasyTec100)
+There is also an explanatory video for this project and a demonstration on YouTube. [Check it out](https://youtu.be/qD9vU8PJhmU?si=HSxL3lxSPtzYpJKj)
 
 ## The following components are required:
 - 1x RaspberryPi (3b+) [other models will certainly work as well].
