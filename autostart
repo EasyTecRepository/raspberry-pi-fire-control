@@ -11,16 +11,15 @@
  
 case "$1" in
     start)
-        echo "firecontrol wird gestartet"
-        python3 /home/grafadmin/firecontrol.py
+        echo "start firecontrol"
+        python3 /home/{YOUR_USER}/firecontrol.py
         ;;
     stop)
-        echo "python wird beendet"
-        # Beende Programm
-        pkill -f "/home/grafadmin/firecontrol.py"
+        echo "stop firecontrol"
+        pkill -f "/home/{YOUR_USER}/firecontrol.py"
         ;;
     *)
-        echo "Benutzt: python firecontrol {start|stop}"
+        echo "Use: firecontrol {start|stop}"
         exit 1
         ;;
 esac
