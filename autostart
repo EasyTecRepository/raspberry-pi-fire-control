@@ -1,0 +1,28 @@
+#! /bin/sh
+### BEGIN INIT INFO
+# Provides: firecontrol
+# Required-Start: $syslog
+# Required-Stop: $syslog
+# Default-Start: 2 3 4 5
+# Default-Stop: 0 1 6
+# Short-Description: firecontrol script
+# Description: based on https://tutorials-raspberrypi.de/raspberry-pi-autostart-programm-skript/
+### END INIT INFO
+ 
+case "$1" in
+    start)
+        echo "firecontrol wird gestartet"
+        python3 /home/grafadmin/firecontrol.py
+        ;;
+    stop)
+        echo "python wird beendet"
+        # Beende Programm
+        pkill -f "/home/grafadmin/firecontrol.py"
+        ;;
+    *)
+        echo "Benutzt: python firecontrol {start|stop}"
+        exit 1
+        ;;
+esac
+ 
+exit 0
